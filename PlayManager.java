@@ -1,4 +1,6 @@
 
+import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics2D;
 
 public class PlayManager {
@@ -23,7 +25,9 @@ public class PlayManager {
     }
 
     public void draw(Graphics2D g2) {
-
+        g2.setColor(Color.white);
+        g2.setStroke(new BasicStroke(4f));
+        g2.drawRect(left_x - 4, top_y - 4, WIDTH + 8, HEIGHT + 8);
     }
 
 }
